@@ -1,15 +1,18 @@
 {
   "name": "Pro Goal Counter",
   "short_name": "Counter",
-  "start_url": "index.html",
+  "description": "A professional glassmorphism counter with goal tracking.",
+  "start_url": "./index.html",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#0f0c29",
-  "theme_color": "#4ee44e",
+  "theme_color": "#0f0c29",
   "icons": [
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
