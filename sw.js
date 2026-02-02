@@ -1,9 +1,14 @@
-// sw.js
+const CACHE_NAME = 'pro-counter-v1';
+const assets = ['./', './index.html', './style.css', './script.js', './manifest.json', './icon-512.png'];
+
 self.addEventListener('install', (e) => {
-  console.log('Service Worker: Installed');
+  e.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(assets))
+  );
 });
 
 self.addEventListener('fetch', (e) => {
-  // This empty fetch handler is REQUIRED for mobile installability
-  e.respondWith(fetch(e.request));
+  e.respondWith(
+    caches.match(e.request).then((response) => response || fetch(e.request))
+  );
 });
