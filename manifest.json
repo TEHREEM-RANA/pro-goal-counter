@@ -1,0 +1,15 @@
+{
+  "name": "Pro Goal Counter",
+  "short_name": "Counter",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f0c29",
+  "theme_color": "#4ee44e",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

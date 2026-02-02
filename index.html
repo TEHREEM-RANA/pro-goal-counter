@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Counter App</title>
+
+     <link rel="manifest" href="manifest.json">
+     <meta name="theme-color" content="#0f0c29">
+    <meta name="description" content="A modern, glassmorphism counter web app with sound effects, goal tracking, and confetti celebrations. Free online tool for counting.">
+    <meta name="keywords" content="online counter, goal tracker, digital counter, web app, glassmorphism, productivity tool">
+    <meta name="author" content="Tehreem Rana">
+    
+    <meta property="og:title" content="Pro Counter App">
+    <meta property="og:description" content="Track your goals with this beautiful glassmorphism counter!">
+    <meta property="og:type" content="website">
+   
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="background-blobs"></div> 
+    <div class="container">
+        <div class="counter-box">
+            <div class="settings-row">
+                <input type="number" id="goal-input" placeholder="Set Goal" title="Set your target number">
+                <button id="mute-btn" class="mini-btn">🔊</button>
+            </div>
+            
+            <h1>Counter</h1>
+            <p id="goal-message"></p>
+            <h2 id="count">0</h2>
+            
+            <div class="btn-container">
+                <button id="plus" class="control-btn">+</button>
+                <button id="minus" class="control-btn">-</button>
+                <button id="reset" class="control-btn">Reset</button>
+            </div>
+            <p class="hint">Tip: Use Keys +, -, R</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
