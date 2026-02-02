@@ -1,0 +1,15 @@
+{
+  "name": "Pro Counter App",
+  "short_name": "Counter",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#4ee44e",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3563/3563395.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
